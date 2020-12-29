@@ -10,7 +10,7 @@
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
-	<script src='/build/lg2.js'></script>
+	<!-- <script src='/build/lg2.js'></script>
   
 	<script>
 	  Module.onRuntimeInitialized = () => {
@@ -19,8 +19,11 @@
 		//   alert('index.html - onRuntimeInitialized()')
 	  };
   
+	</script> -->
+
+	<script>
+		new Worker('example_webworker.js');
 	</script>
-  
 	<script defer src='/build/bundle.js'></script>
 </head>
 
