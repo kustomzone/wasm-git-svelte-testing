@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import rust from "@wasm-tool/rollup-plugin-rust";
+import wasm from "@rollup/plugin-wasm";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -74,6 +75,7 @@ export default {
 			verbose: true,
 			serverPath: "/build/"
 		}),
+		wasm(),
 	],
 	watch: {
 		clearScreen: false

@@ -10,6 +10,19 @@
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
+	<script src='/build/lg2.js'></script>
+  
+	<script>
+	  Module.onRuntimeInitialized = () => {
+		  window.ready = true;
+		  window.lg2 = Module;
+		//   alert('index.html - onRuntimeInitialized()')
+	  };
+  
+	</script>
+  
+
+
 	<script defer src='/build/bundle.js'></script>
 </head>
 
