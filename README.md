@@ -5,6 +5,21 @@ This is an experimental Svelte/Rust/Wasm app (generated from the [svelte-wasm-te
 
 No useful code here!
 
+## Prereqs
+
+* Node.js
+* Rust
+
+## Get Started
+
+```bash
+git clone https://github.com/happybeing/wasm-git-svelte-testing
+cd wasm-git-svelte-testing
+yarn && yarn dev
+```
+
+Navigate to localhost:5000 and you should see the app running. 
+
 ## LICENSE
 
 Everything in this project is subject to the GPL3.0 license. All contributions are accepted on the basis they conform to this license.
